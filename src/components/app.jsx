@@ -41,11 +41,13 @@ export default class App extends Component {
             <Link to="/projects"><h5>Projects</h5></Link>
             <Link to="/current"><h5>Current</h5></Link>
           </div>
-          <div className="my-footer">
-            <div className="icons">
-              <a href="https://www.linkedin.com/in/jupiters-liam-baker/" target="blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-              <a href="https://github.com/JupitersLB" target="blank"><FontAwesomeIcon icon={faGithub} /></a>
-              <a href="#"><FontAwesomeIcon icon={faEnvelope} /></a>
+          <div className="row">
+            <div className="my-footer">
+              <div className="icons">
+                <a href="https://www.linkedin.com/in/jupiters-liam-baker/" target="blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href="https://github.com/JupitersLB" target="blank"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="#"><FontAwesomeIcon icon={faEnvelope} /></a>
+              </div>
             </div>
           </div>
         </div>
