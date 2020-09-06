@@ -1,5 +1,6 @@
 .my-navbar {
   position: absolute;
+  padding: 16px;
   left: 0%;
   top: 0%;
   height: 100%;
@@ -28,16 +29,21 @@
     }
   }
   .profile-links {
-    padding-top: 24px;
+    padding-top: 8px;
     h5 {
       padding-top: 8px;
       font-size: 20px;
     }
   }
+
+  .about-me {
+    padding: 16px 16px 0px 16px;
+    text-align: center;
+  }
   .my-footer {
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 0%;
+    bottom: 16px;
   }
 }
