@@ -1,10 +1,12 @@
+import token from './config';
+
 const fetch = require("node-fetch");
 
 const repoListUrl = 'https://api.github.com/users/JupitersLB/repos';
 
 const baseUrl = 'https://api.github.com/';
 
-const headers = { 'Authorization' : 'Token 572e141219075fc960bc8d3cd780784621b692e6' };
+const headers = { 'Authorization' : `Token ${token}` };
 
 const repoCounts = (repoName) => {
   const url = `${baseUrl}repos/JupitersLB/${repoName}/stats/punch_card`;
