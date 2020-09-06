@@ -53,15 +53,9 @@ export default class App extends Component {
         </div>
 
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/current">
-            <Current />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/current" component={Current} />
         </Switch>
       </Router>
     );
