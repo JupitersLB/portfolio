@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
-export class GitHubBar extends Component {
+export default class GitHubBar extends Component {
   render() {
     return (
-      <div></div>
+      <div className="github-banner">
+        <p>This will be statistics from GitHub</p>
+      </div>
     );
   }
 }
