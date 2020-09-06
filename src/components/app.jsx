@@ -37,6 +37,7 @@ export default class App extends Component {
             </p>
           </div>
           <div className="profile-links text-center">
+            <Link to="/"><h5>Home</h5></Link>
             <Link to="/projects"><h5>Projects</h5></Link>
             <Link to="/current"><h5>Current</h5></Link>
           </div>
@@ -50,7 +51,7 @@ export default class App extends Component {
         </div>
 
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="/projects">
