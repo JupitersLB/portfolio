@@ -1,6 +1,7 @@
 .project-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 88vh;
+  padding-top: 32px;
+  height: 100%;
   width: 100%;
 }

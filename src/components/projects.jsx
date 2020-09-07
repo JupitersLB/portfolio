@@ -8,7 +8,6 @@ export default class Projects extends Component {
   render() {
     return (
       <div className="content-container">
-        <h1>Projects</h1>
         <div className="project-cards">
           { projects.map(p => <Project data={p} key={p.id} /> ) }
         </div>

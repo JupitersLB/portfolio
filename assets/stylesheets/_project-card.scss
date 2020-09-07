@@ -4,6 +4,10 @@
   background-size: cover;
   border: 1.5px solid white;
   filter: grayscale(1);
+  .project-title {
+    padding: 8px;
+    margin-top: 16px;
+  }
   h1 {
     display: none;
     font-size: 100px;
