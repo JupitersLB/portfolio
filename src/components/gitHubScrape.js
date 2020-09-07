@@ -1,4 +1,9 @@
-import token from './config';
+import { createRequire } from 'module';
+
+import { config } from './apiToken.js';
+
+const require = createRequire(import.meta.url);
+
 
 const fetch = require("node-fetch");
 
@@ -6,7 +11,7 @@ const repoListUrl = 'https://api.github.com/users/JupitersLB/repos';
 
 const baseUrl = 'https://api.github.com/';
 
-const headers = { 'Authorization' : `Token ${token}` };
+const headers = { 'Authorization' : `Token ${config.token}` };
 
 const repoCounts = (repoName) => {
   const url = `${baseUrl}repos/JupitersLB/${repoName}/stats/punch_card`;
@@ -15,20 +20,8 @@ const repoCounts = (repoName) => {
     'headers': headers
   })
     .then(r => r.json())
-    .then(d => console.log(d));
+    .then(d => console.log(d.reverse()));
 };
-
-// const dailyCount = `${baseUrl}repos/JupitersLB/${repoName}/stats/punch_card`;
-
-// const api = () => {
-//   fetch('https://api.github.com/users/JupitersLB/repos')
-//     .then(r => r.json())
-//     .then(repos => repos.map((repoName) => {
-//       fetch(`https://api.github.com/repos/JupitersLB/${repoName}/stats/punch_card`)
-//         .then(r => r.json())
-//         .then(data => console.log(data));
-//     }));
-// };
 
 const api = () => {
   fetch(repoListUrl, {

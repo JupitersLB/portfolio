@@ -1,4 +1,4 @@
-config.js
+apiToken.js
 .DS_Store
 dist
 /node_modules
