@@ -1,0 +1,6 @@
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 88vh;
+  width: 100%;
+}

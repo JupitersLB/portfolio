@@ -1,11 +1,10 @@
 .my-avatar {
-  // background-image: url(../images/avatar.jpg);
-  // position: relative;
-  // top: 10%;
+  background-image: url('../images/avatar.png');
+  background-position: center;
+  background-size: cover;
   margin: auto;
   margin-top: 20%;
   border-radius: 50%;
   width: 160px;
   height: 160px;
-  background-color: red;
 }

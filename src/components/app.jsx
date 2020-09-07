@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+// import Avatar from './avatar.jpg';
 import Projects from './projects';
 import Current from './current';
 import GitHubBar from './gitHubBar';
@@ -21,7 +22,8 @@ export default class App extends Component {
       <Router>
         <GitHubBar />
         <div className="my-navbar">
-          <div className="my-avatar"></div>
+          <div className="my-avatar">
+          </div>
           <div className="my-name">
             <h1>Liam Baker</h1>
           </div>

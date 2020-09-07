@@ -1,0 +1,15 @@
+.project-card {
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  border: 1.5px solid white;
+  h1 {
+    display: none;
+    font-size: 100px;
+  }
+  &:hover {
+    h1 {
+      display: block;
+    }
+  }
+}
