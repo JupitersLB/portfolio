@@ -15,12 +15,17 @@ const headers = { 'Authorization' : `Token ${config.token}` };
 
 const repoCounts = (repoName) => {
   const url = `${baseUrl}repos/JupitersLB/${repoName}/stats/punch_card`;
-  console.log(url);
   fetch(url, {
     'headers': headers
   })
     .then(r => r.json())
-    .then(d => console.log(d.reverse()));
+    .then((data) => {
+      data.reverse().map((d) => {
+        if (d[0] === 6) {
+          console.log(d[2]);
+        }
+      });
+    });
 };
 
 const api = () => {
