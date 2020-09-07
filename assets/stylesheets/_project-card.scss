@@ -3,11 +3,14 @@
   background-position: center;
   background-size: cover;
   border: 1.5px solid white;
+  filter: grayscale(1);
   h1 {
     display: none;
     font-size: 100px;
+    color: rgb(240, 240, 240);
   }
   &:hover {
+    filter: none;
     h1 {
       display: block;
     }
