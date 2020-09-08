@@ -1,10 +1,18 @@
 .project-show {
   padding-top: 32px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 2s ease-out;
   .project-image {
-    display:none;
     width: inherit;
     height: 480px;
     background-position: center;
     background-size: cover;
   }
+}
+
+.project-show.active {
+  opacity: 1;
+  height: auto;
 }
