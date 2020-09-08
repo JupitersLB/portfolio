@@ -15,6 +15,8 @@ export default class Projects extends Component {
   changeSelectedProject = (newSelectedProject) => {
     // console.log(newSelectedProject);
     this.setState({ selectedProject: newSelectedProject });
+    const projectImage = document.querySelector('.project-image');
+    projectImage.style.display = 'block';
   }
 
   render() {

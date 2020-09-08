@@ -5,6 +5,8 @@ export default class ProjectCard extends Component {
   handleClick = () => {
     const { project, changeSelectedProject } = this.props;
     changeSelectedProject(project);
+    const container = document.querySelector('.content-container');
+    container.scrollTo({top: 0, behavior: 'smooth'});
   }
 
   render() {

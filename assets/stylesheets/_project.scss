@@ -1,0 +1,10 @@
+.project-show {
+  padding-top: 32px;
+  .project-image {
+    display:none;
+    width: inherit;
+    height: 480px;
+    background-position: center;
+    background-size: cover;
+  }
+}
