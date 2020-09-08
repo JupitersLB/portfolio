@@ -14,12 +14,19 @@
       padding-left: 18px;
     }
   }
-  .project-image {
-    width: inherit;
-    height: 480px;
-    background-position: center;
-    background-size: cover;
+  .project-body {
+    display: flex;
+    .project-image {
+      width: 640px;
+      height: 400px;
+      background-position: center;
+      background-size: cover;
+    }
+    .project-description {
+      padding-left: 16px;
+    }
   }
+
 }
 
 .project-show.active {
