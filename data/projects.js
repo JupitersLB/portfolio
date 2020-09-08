@@ -42,18 +42,7 @@ const projects = [
     url: 'http://farm-me.herokuapp.com',
     description: 'A great marketplace for farmers to connect with and sell to their local communities taking distance into account.',
     imageUrl: '/assets/images/farm-me.png'
-  },
-  {
-    id: 5,
-    name: 'Freelance',
-    role: 'full stack developer',
-    target: '',
-    pain: '',
-    solution: '',
-    url: 'https://www.growing-trees.com/LTonline/',
-    description: 'Maintaining and developing and content and information develiery system.',
-    imageUrl: '/assets/images/avatar.png'
-  },
+  }
 ];
 
 export default projects;

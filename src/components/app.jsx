@@ -10,9 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-// import Avatar from './avatar.jpg';
 import Projects from './projects';
-import Current from './current';
+import Freelance from './freelance';
 import GitHubBar from './gitHubBar';
 import Home from './home';
 
@@ -41,7 +40,7 @@ export default class App extends Component {
           <div className="profile-links text-center">
             <Link to="/"><h5>Home</h5></Link>
             <Link to="/projects"><h5>Projects</h5></Link>
-            <Link to="/current"><h5>Current</h5></Link>
+            <Link to="/freelance"><h5>Freelance</h5></Link>
           </div>
           <div className="row">
             <div className="my-footer">
@@ -57,7 +56,7 @@ export default class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
-          <Route path="/current" component={Current} />
+          <Route path="/freelance" component={Freelance} />
         </Switch>
       </Router>
     );

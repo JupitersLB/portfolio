@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export default class Current extends Component {
+export default class Freelance extends Component {
   render() {
     return (
       <div className="content-container">
-        <h1>Current</h1>
+        <h1>Freelance</h1>
       </div>
     );
   }
