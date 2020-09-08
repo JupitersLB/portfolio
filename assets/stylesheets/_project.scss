@@ -7,7 +7,9 @@
   .project-heading {
     display: flex;
     padding-left: 8px;
+    padding-right: 8px;
     padding-bottom: 16px;
+    justify-content: space-between;
     .project-role {
       padding-left: 18px;
     }
