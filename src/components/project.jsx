@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 export default class Project extends Component {
+
   render() {
-    const project = this.props;
+    const { project } = this.props;
     return (
-      <div className="project-card" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url('${project.data.imageUrl}')` }}>
-        <div className="project-title">
-          <h1>{project.data.name}</h1>
-        </div>
+      <div>
+        <h1>{project.name}</h1>
+        <h1>{project.url}</h1>
+        <h1>{project.description}</h1>
       </div>
     );
   }
