@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactPlayer from 'react-player/youtube';
 
+// eslint-disable-next-line react/prefer-stateless-function
 export default class Project extends Component {
   render() {
     const { project, icons } = this.props;
+    console.log(project.videoUrl);
     return (
       <div className="project-show">
         <div className="project-heading">
           <h1 className="project-title">{project.name}</h1>
         </div>
         <div className="project-body">
-          <a href={project.url} target="blank">
-            <div className="project-image" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('${project.imageUrl}')` }}></div>
-          </a>
+          <div className="youtube-player">
+            <ReactPlayer
+              url={project.videoUrl}
+              height="400px"
+            />
+          </div>
           <div className="project-description">
             <h2>Background</h2>
             <h4>{project.description}</h4>

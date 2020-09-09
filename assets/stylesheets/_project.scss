@@ -19,6 +19,10 @@
   .project-body {
     display: flex;
     color: rgb(100, 100, 100);
+    .youtube-player {
+      width: 640px;
+      height: 400px;
+    }
     .project-image {
       width: 640px;
       height: 400px;
