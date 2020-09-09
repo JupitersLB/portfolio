@@ -4,26 +4,32 @@ import ProjectCard from './projectCard';
 import Project from './project';
 import projects from '../../data/projects';
 
+
 export default class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedProject: {}
+      selectedProject: {},
+      selectedProjectIcons: []
     };
   }
 
   changeSelectedProject = (newSelectedProject) => {
-    // console.log(newSelectedProject);
     this.setState({ selectedProject: newSelectedProject });
     const projectShow = document.querySelector('.project-show');
     projectShow.classList.add('active');
+    this.changeSelectedIcons(newSelectedProject);
+  }
+
+  changeSelectedIcons = (newSelectedProject) => {
+    this.setState({ selectedProjectIcons: newSelectedProject.icons });
   }
 
   render() {
-    const { selectedProject } = this.state;
+    const { selectedProject, selectedProjectIcons } = this.state;
     return (
       <div className="content-container">
-        <Project project={selectedProject} />
+        <Project project={selectedProject} icons={selectedProjectIcons} />
         <div className="project-cards">
           { projects.map(p => <ProjectCard project={p} key={p.id} changeSelectedProject={this.changeSelectedProject} />) }
         </div>
