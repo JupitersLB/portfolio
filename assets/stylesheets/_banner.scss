@@ -1,12 +1,26 @@
 .github-banner {
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
   top: 0;
   right: 0;
   width: 75%;
   text-align: center;
-  background-color: rgb(230, 230, 230);
+  overflow: hidden;
+  background-color: hsl(274,28%,94%);
+  // transform: translateX(100%);
+  animation: slide 25s linear infinite;
   p {
     padding: 8px;
     margin-bottom: 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
