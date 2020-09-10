@@ -10,17 +10,23 @@
   background-color: hsl(274,28%,94%);
   // transform: translateX(100%);
   animation: slide 25s linear infinite;
+  padding: 6px;
   p {
-    padding: 8px;
+    padding-top: 8px;
     margin-bottom: 0;
+    font-size: 16px;
+  }
+  span {
+    font-size: 26px;
+    margin-top: -4px;
   }
 }
 
 @keyframes slide {
   0% {
-    transform: translateX(100%);
+    transform: translateX(130%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-75%);
   }
 }

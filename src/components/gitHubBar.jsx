@@ -51,6 +51,8 @@ export default class GitHubBar extends Component {
     console.log(this.state);
     return (
       <div className="github-banner">
+        <span role="img" aria-label="race-car">🏎</span>
+        <p>Monthly commits -></p>
         <p>Yours: {yoursMonth}</p>
         <p>Mister Cocktail: {misterMonth}</p>
         <p>Medi-Safe: {mediMonth}</p>
