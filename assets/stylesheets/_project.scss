@@ -1,5 +1,5 @@
 .project-show {
-  padding-top: 32px;
+  padding: 32px;
   opacity: 0;
   height: 0;
   overflow: hidden;
@@ -16,19 +16,65 @@
     padding-bottom: 16px;
     justify-content: center;
   }
+  .project-details {
+    margin-top: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    .project-pain {
+      .pain-title {
+        text-align: center;
+        span {
+          padding-left: 8px;
+          position: relative;
+          bottom: 2px;
+        }
+      }
+      .pain-body {
+        padding: 8px;
+      }
+      background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140,0.03) 0%, rgba(140, 140, 140,0.03) 25%,transparent 25%, transparent 100%),radial-gradient(circle at 28% 63%, rgba(143, 143, 143,0.03) 0%, rgba(143, 143, 143,0.03) 16%,transparent 16%, transparent 100%),radial-gradient(circle at 81% 56%, rgba(65, 65, 65,0.03) 0%, rgba(65, 65, 65,0.03) 12%,transparent 12%, transparent 100%),radial-gradient(circle at 26% 48%, rgba(60, 60, 60,0.03) 0%, rgba(60, 60, 60,0.03) 6%,transparent 6%, transparent 100%),radial-gradient(circle at 97% 17%, rgba(150, 150, 150,0.03) 0%, rgba(150, 150, 150,0.03) 56%,transparent 56%, transparent 100%),radial-gradient(circle at 50% 100%, rgba(25, 25, 25,0.03) 0%, rgba(25, 25, 25,0.03) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 55% 52%, rgba(69, 69, 69,0.03) 0%, rgba(69, 69, 69,0.03) 6%,transparent 6%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+      padding: 16px;
+      width: 44%;
+      border: 1px solid rgb(220,206,228);
+      border-radius: 16px;
+      box-shadow: 2px 2px 16px rgb(220,206,228);
+
+    }
+    .project-solution {
+      .solution-title {
+        text-align: center;
+        span {
+          padding-left: 8px;
+          position: relative;
+          bottom: 4px;
+        }
+      }
+      .solution-body {
+        padding: 8px;
+      }
+      background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140,0.03) 0%, rgba(140, 140, 140,0.03) 25%,transparent 25%, transparent 100%),radial-gradient(circle at 28% 63%, rgba(143, 143, 143,0.03) 0%, rgba(143, 143, 143,0.03) 16%,transparent 16%, transparent 100%),radial-gradient(circle at 81% 56%, rgba(65, 65, 65,0.03) 0%, rgba(65, 65, 65,0.03) 12%,transparent 12%, transparent 100%),radial-gradient(circle at 26% 48%, rgba(60, 60, 60,0.03) 0%, rgba(60, 60, 60,0.03) 6%,transparent 6%, transparent 100%),radial-gradient(circle at 97% 17%, rgba(150, 150, 150,0.03) 0%, rgba(150, 150, 150,0.03) 56%,transparent 56%, transparent 100%),radial-gradient(circle at 50% 100%, rgba(25, 25, 25,0.03) 0%, rgba(25, 25, 25,0.03) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 55% 52%, rgba(69, 69, 69,0.03) 0%, rgba(69, 69, 69,0.03) 6%,transparent 6%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+      padding: 16px;
+      width: 44%;
+      border: 1px solid rgb(220,206,228);
+      border-radius: 16px;
+      box-shadow: 2px 2px 16px rgb(220,206,228);
+
+    }
+  }
   .project-body {
     display: flex;
     color: rgb(100, 100, 100);
     .youtube-player {
-      width: 640px;
+      width: 720px;
       height: 400px;
     }
-    .project-image {
-      width: 640px;
-      height: 400px;
-      background-position: center;
-      background-size: cover;
-    }
+    // .project-image {
+    //   width: 640px;
+    //   height: 400px;
+    //   background-position: center;
+    //   background-size: cover;
+    // }
     .project-description {
       padding-left: 16px;
       text-align: center;

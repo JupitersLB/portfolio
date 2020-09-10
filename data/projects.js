@@ -47,7 +47,7 @@ const projects = [
     url: 'http://farm-me.herokuapp.com',
     description: 'A great marketplace for farmers to connect with, and sell, to their local communities. Those who care about sustainabilty and their local economies would love this.',
     imageUrl: '/assets/images/farm-me.png',
-    videoUrl: ['']
+    videoUrl: []
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const projects = [
     url: 'https://www.growing-trees.com/LTonline/',
     description: 'This website acts as an online content delivery service, as well as a paywall between live stream events and classes. It has allowed the school to continue functioning throught COVID-19',
     imageUrl: '/assets/images/LT-online.png',
-    videoUrl: ['https://www.youtube.com/watch?v=KDDgoUTQ4NI&feature=youtu.be&ab_channel=LiamBaker']
+    videoUrl: []
   }
 ];
 

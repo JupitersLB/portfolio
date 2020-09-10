@@ -17,6 +17,7 @@ export default class Project extends Component {
             <ReactPlayer
               url={project.videoUrl}
               height="400px"
+              width="720px"
             />
           </div>
           <div className="project-description">
@@ -32,13 +33,29 @@ export default class Project extends Component {
             </div>
           </div>
         </div>
-        <div className="project-pain">
-          <h3>Pain</h3>
-          <p>{project.pain}</p>
-        </div>
-        <div className="project-solution">
-          <h3>Solution</h3>
-          <p>{project.solution}</p>
+        <div className="project-details">
+          <div className="project-pain">
+            <div className="pain-title">
+              <h3>
+                Pain
+                <span role="img" aria-label="goblin">👺</span>
+              </h3>
+            </div>
+            <div className="pain-body">
+              <p>{project.pain}</p>
+            </div>
+          </div>
+          <div className="project-solution">
+            <div className="solution-title">
+              <h3>
+                Solution
+                <span role="img" aria-label="lightbulb">💡</span>
+              </h3>
+            </div>
+            <div className="solution-body">
+              <p>{project.solution}</p>
+            </div>
+          </div>
         </div>
       </div>
     );
