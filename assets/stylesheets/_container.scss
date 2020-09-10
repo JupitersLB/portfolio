@@ -1,8 +1,10 @@
 .content-container {
+  background-color: hsl(274,28%,94%);
   position: absolute;
   padding: 16px;
   right: 0;
   width:75%;
   height: 100%;
   overflow: scroll;
+  z-index: -1;
 }
