@@ -1,0 +1,25 @@
+.about-me {
+  padding: 32px;
+}
+
+.travel {
+  display: flex;
+  justify-content: space-between;
+  .text {
+    width: 40%;
+  }
+  .map-container {
+    width: 55%;
+    height: inherit;
+    visibility: visible;
+  }
+}
+
+.marker {
+  background-image: url('../images/mapbox-icon.png');
+  background-size: cover;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}

@@ -1,4 +1,5 @@
 apiToken.js
+mapBoxToken.js
 .DS_Store
 dist
 /node_modules

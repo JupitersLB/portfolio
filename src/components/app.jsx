@@ -13,7 +13,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Projects from './projects';
 // import Freelance from './freelance';
 import GitHubBar from './gitHubBar';
-import Home from './home';
+import About from './about';
 
 export default class App extends Component {
   render() {
@@ -38,8 +38,8 @@ export default class App extends Component {
             </p>
           </div>
           <div className="profile-links text-center">
-            <Link to="/"><h5>Home</h5></Link>
-            <Link to="/projects"><h5>Projects</h5></Link>
+            <Link to="/"><h5>Projects</h5></Link>
+            <Link to="/about"><h5>About</h5></Link>
           </div>
           <div className="row">
             <div className="my-footer">
@@ -53,8 +53,8 @@ export default class App extends Component {
         </div>
 
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Projects} />
+          <Route exact path="/" component={Projects} />
+          <Route path="/about" component={About} />
         </Switch>
       </Router>
     );

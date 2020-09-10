@@ -32,6 +32,7 @@
     "@fortawesome/react-native-fontawesome": "^0.2.5",
     "css-loader": "^4.2.2",
     "file-loader": "^6.1.0",
+    "mapbox-gl": "^1.12.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-player": "^2.6.2",
