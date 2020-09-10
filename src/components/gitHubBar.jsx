@@ -48,7 +48,6 @@ export default class GitHubBar extends Component {
     // console.log(counts);
     // console.log(counts.yours.promise.then(d => console.log(d.owner.reverse().slice(0,4))));
     const { yoursMonth, misterMonth, mediMonth, portfolioMonth } = this.state;
-    console.log(this.state);
     return (
       <div className="github-banner">
         <span role="img" aria-label="race-car">🏎</span>

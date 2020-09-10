@@ -1,10 +1,11 @@
 import React from 'react';
 import Mapbox from './mapbox';
+import { hobbyImages } from '../../data/hobbies';
 
 export default function About() {
   return (
     <div className="content-container">
-      <div className="about-me">
+      <div className="about-me-page">
         <h1>About me</h1>
         <div className="travel">
           <div className="text">
@@ -24,6 +25,15 @@ export default function About() {
             </div>
           </div>
           <Mapbox />
+        </div>
+      </div>
+      <div className="hobbies">
+        <div className="hobbies-title">
+          <h1>Hobbies</h1>
+        </div>
+        <div className="images">
+          {hobbyImages.map((image, idx) => <img src={image} alt="" key={idx}></img> )}
+
         </div>
       </div>
     </div>
