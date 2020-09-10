@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSortDown } from '@fortawesome/free-solid-svg-icons';
+
 import ReactPlayer from 'react-player/youtube';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class Project extends Component {
+
+  handleClick = () => {
+    const projectCards = document.querySelector('.project-cards');
+    projectCards.classList.remove('deactivate');
+    projectCards.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
   render() {
     const { project, icons } = this.props;
     console.log(project.videoUrl);
@@ -56,6 +67,9 @@ export default class Project extends Component {
               <p>{project.solution}</p>
             </div>
           </div>
+        </div>
+        <div className="scroll-down-icon">
+          <FontAwesomeIcon icon={faSortDown} onClick={this.handleClick} />
         </div>
       </div>
     );

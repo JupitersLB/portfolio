@@ -16,8 +16,12 @@ export default class Projects extends Component {
 
   changeSelectedProject = (newSelectedProject) => {
     this.setState({ selectedProject: newSelectedProject });
+
     const projectShow = document.querySelector('.project-show');
     projectShow.classList.add('active');
+
+    // const projectCards = document.querySelector('.project-cards');
+    // projectCards.classList.add('deactivate');
     this.changeSelectedIcons(newSelectedProject);
   }
 

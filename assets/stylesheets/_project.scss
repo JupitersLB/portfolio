@@ -1,8 +1,7 @@
 .project-show {
-  padding: 32px;
   opacity: 0;
   height: 0;
-  overflow: hidden;
+  overflow: scroll;
   transition: opacity 1.5s ease-out;
   .project-title {
     font-size: 64px;
@@ -92,10 +91,23 @@
       }
     }
   }
-
+  .scroll-down-icon {
+    font-size: 32px;
+    text-align: center;
+    color: rgb(220,206,228);
+    transition: 0.1s;
+    &:hover {
+      color: rgb(184,156,201);
+      transform: scale(2);
+    }
+    svg {
+      cursor: pointer;
+    }
+  }
 }
 
 .project-show.active {
+  padding: 32px;
   opacity: 1;
-  height: auto;
+  height: 100vh;
 }
