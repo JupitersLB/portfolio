@@ -1,24 +1,27 @@
 .about-me-page {
   padding: 32px;
-  h1 {
+  height: 100vh;
+  h1.about-heading {
     padding-left: 32px;
   }
 }
 
 .travel {
+  padding-top: 32px;
   display: flex;
   justify-content: space-between;
-  height: 100%;
-  .text {
-    padding: 16px;
-    width: 40%;
-    .programming-text {
-      padding-top: 16px;
+  min-height: fit-content;
+  // height: 50%;
+  .text-side {
+    .text {
+      padding: 16px;
+      .programming-text {
+        padding-top: 16px;
+      }
     }
-  }
-  .map-container {
-    width: 55%;
-    visibility: visible;
+    .map-container {
+      visibility: visible;
+    }
   }
 }
 
@@ -32,18 +35,49 @@
 }
 
 .hobbies {
+  padding-top: 32px;
+  height: 45%;
   .hobbies-title {
     text-align: center;
   }
   .images {
+    padding-top: 24px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     width: inherit;
     img{
       width: 100%;
+      height: inherit;
       background-position: center;
-      background-size: cover;
+      object-fit: cover;
       border: 1.5px solid white;
     }
+  }
+}
+
+@media (min-width: 1175px) and (max-width: 1250px) {
+  .map-container {
+    width: 40%;
+  }
+  .text-side {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1251px) and (max-width: 1350px) {
+  .map-container {
+    width: 50%;
+  }
+  .text-side {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1351px) {
+  .map-container {
+    width: 55%;
+  }
+  .text-side {
+    width: 40%;
   }
 }
