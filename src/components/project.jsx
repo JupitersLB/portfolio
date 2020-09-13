@@ -17,7 +17,6 @@ export default class Project extends Component {
 
   render() {
     const { project, icons } = this.props;
-    console.log(project.videoUrl);
     return (
       <div className="project-show">
         <div className="project-heading">
@@ -28,7 +27,7 @@ export default class Project extends Component {
             <ReactPlayer
               url={project.videoUrl}
               height="400px"
-              width="720px"
+              width="100%"
             />
           </div>
           <div className="project-description">

@@ -1,13 +1,13 @@
 .github-banner {
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: space-around;
-  top: 0;
-  right: 0;
+  // top: 0;
+  // right: 0;
   width: 75%;
   text-align: center;
   overflow: hidden;
-  background-color: hsl(274,28%,94%);
+  // background-color: hsl(274,28%,94%);
   // transform: translateX(100%);
   animation: slide 25s linear infinite;
   padding: 6px;
@@ -20,6 +20,10 @@
     font-size: 26px;
     margin-top: -4px;
   }
+}
+
+.github-placegolder {
+
 }
 
 @keyframes slide {

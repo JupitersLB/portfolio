@@ -49,14 +49,16 @@ export default class GitHubBar extends Component {
     // console.log(counts.yours.promise.then(d => console.log(d.owner.reverse().slice(0,4))));
     const { yoursMonth, misterMonth, mediMonth, portfolioMonth } = this.state;
     return (
-      <div className="github-banner">
-        <span role="img" aria-label="race-car">🏎</span>
-        <p>Monthly commits -></p>
-        <p>Yours: {yoursMonth}</p>
-        <p>Mister Cocktail: {misterMonth}</p>
-        <p>Medi-Safe: {mediMonth}</p>
-        <p>Portfolio: {portfolioMonth}</p>
-        <p>Total: {mediMonth + portfolioMonth + misterMonth + yoursMonth}</p>
+      <div className="github-placegolder">
+        <div className="github-banner">
+          <span role="img" aria-label="race-car">🏎</span>
+          <p>Monthly commits -></p>
+          <p>Yours: {yoursMonth}</p>
+          <p>Mister Cocktail: {misterMonth}</p>
+          <p>Medi-Safe: {mediMonth}</p>
+          <p>Portfolio: {portfolioMonth}</p>
+          <p>Total: {mediMonth + portfolioMonth + misterMonth + yoursMonth}</p>
+        </div>
       </div>
     );
   }

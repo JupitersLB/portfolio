@@ -10,5 +10,12 @@
 body {
   font-family: Helvetica;
   background-color: hsl(274,28%,94%);
+  a {
+    color: #333;
+    &:hover {
+      text-decoration: none;
+      color: #222;
+    }
+  }
 }
 

@@ -15,14 +15,14 @@ import Projects from './projects';
 import GitHubBar from './gitHubBar';
 import About from './about';
 
+// eslint-disable-next-line react/prefer-stateless-function
 export default class App extends Component {
   render() {
     return (
       <Router>
         <GitHubBar />
         <div className="my-navbar">
-          <div className="my-avatar">
-          </div>
+          <div className="my-avatar"></div>
           <div className="my-name">
             <h1>Liam Baker</h1>
           </div>

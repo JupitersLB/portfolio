@@ -30,6 +30,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@fortawesome/react-native-fontawesome": "^0.2.5",
+    "aos": "^2.3.4",
+    "babel-upgrade": "^1.0.1",
     "css-loader": "^4.2.2",
     "file-loader": "^6.1.0",
     "mapbox-gl": "^1.12.0",
