@@ -15,8 +15,10 @@ const Mapbox = () => {
       // See style options here: https://docs.mapbox.com/api/maps/#styles
       style: 'mapbox://styles/jupiters/ckewm8z3c0q4u19qkqkr5wm51',
       center: [126.9780, 37.5665],
-      zoom: 2.7,
+      zoom: 3.1,
     });
+
+    map.scrollZoom.disable();
     // eslint-disable-next-line func-names, no-unreachable, prefer-arrow-callback
     geojson.features.forEach(function(marker) {
       // create a HTML element for each feature

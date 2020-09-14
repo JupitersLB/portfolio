@@ -14,6 +14,7 @@ import Projects from './projects';
 // import Freelance from './freelance';
 import GitHubBar from './gitHubBar';
 import About from './about';
+import Test from './scroll';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class App extends Component {
@@ -40,6 +41,7 @@ export default class App extends Component {
           <div className="profile-links text-center">
             <Link to="/"><h5>Projects</h5></Link>
             <Link to="/about"><h5>About</h5></Link>
+            <Link to="/test"><h5>test</h5></Link>
           </div>
           <div className="row">
             <div className="my-footer">
@@ -55,6 +57,7 @@ export default class App extends Component {
         <Switch>
           <Route exact path="/" component={Projects} />
           <Route path="/about" component={About} />
+          <Route path="/test" component={Test} />
         </Switch>
       </Router>
     );

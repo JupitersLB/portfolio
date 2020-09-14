@@ -6,8 +6,10 @@
 @import "project-cards";
 @import "project";
 @import "about";
+@import "test";
 
 body {
+  overflow-x: hidden;
   font-family: Helvetica;
   background-color: hsl(274,28%,94%);
   a {
@@ -19,3 +21,6 @@ body {
   }
 }
 
+#root {
+  overflow-x: hidden;
+}
