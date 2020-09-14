@@ -17,8 +17,6 @@ import About from './about';
 // eslint-disable-next-line react/prefer-stateless-function
 export default class App extends Component {
   render() {
-    const test = process.env.MY_VARIABLE;
-    console.log(test);
     return (
       <Router>
         <GitHubBar />
