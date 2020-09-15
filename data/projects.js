@@ -52,7 +52,7 @@ const projects = [
     url: 'http://farm-me.herokuapp.com',
     description: 'A great marketplace for farmers to connect with, and sell, to their local communities. Those who care about sustainabilty and their local economies would love this.',
     imageUrl: farmMe,
-    videoUrl: []
+    videoUrl: 'https://youtu.be/HKybfaIZSOw'
   },
   {
     id: 5,
