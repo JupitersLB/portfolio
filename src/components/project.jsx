@@ -67,8 +67,8 @@ export default class Project extends Component {
             </div>
           </div>
         </div>
-        <div className="scroll-down-icon">
-          <FontAwesomeIcon icon={faSortDown} onClick={this.handleClick} />
+        <div className="scroll-down-icon" onClick={this.handleClick}>
+          <FontAwesomeIcon icon={faSortDown} />
         </div>
       </div>
     );

@@ -53,11 +53,11 @@ export default class GitHubBar extends Component {
         <div className="github-banner">
           <span role="img" aria-label="race-car">🏎</span>
           <p>Monthly commits -></p>
-          <p>Yours: {yoursMonth}</p>
-          <p>Mister Cocktail: {misterMonth}</p>
-          <p>Medi-Safe: {mediMonth}</p>
-          <p>Portfolio: {portfolioMonth}</p>
-          <p>Total: {mediMonth + portfolioMonth + misterMonth + yoursMonth}</p>
+          <p><b>Yours:</b> {yoursMonth}</p>
+          <p><b>Mister Cocktail:</b> {misterMonth}</p>
+          <p><b>Medi+Safe:</b> {mediMonth}</p>
+          <p><b>Portfolio:</b> {portfolioMonth}</p>
+          <p><b>Total:</b> {mediMonth + portfolioMonth + misterMonth + yoursMonth}</p>
         </div>
       </div>
     );

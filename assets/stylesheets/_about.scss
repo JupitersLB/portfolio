@@ -88,6 +88,22 @@
   }
 }
 
+.page-navigation {
+  position: fixed;
+  margin-top: -96px;
+  top: 50%;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  svg {
+    margin-bottom: 16px;
+    color: rgb(220,206,229);
+    &:hover {
+      color: rgb(184,156,201);
+    }
+  }
+}
+
 .hidden {
   opacity: 0;
   transition: opacity 1s;
@@ -97,9 +113,6 @@
   animation: fade-in 1s;
 }
 
-// .fade-out-element {
-//   animation: fade-out 1s;
-// }
 
 @keyframes fade-in {
     0% {opacity: 0; transform: scale(.7,.7)}

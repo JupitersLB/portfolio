@@ -1,5 +1,5 @@
 import { faHtml5, faCss3, faReact, faFigma, faJsSquare, faBootstrap, faWordpress, faYarn } from '@fortawesome/free-brands-svg-icons';
-import yours from '../assets/images/avatar.png';
+import yours from '../assets/images/yours.png';
 import mediSafe from '../assets/images/medi-safe.png';
 import cocktail from '../assets/images/mister-cocktail.png';
 import farmMe from '../assets/images/farm-me.png';
