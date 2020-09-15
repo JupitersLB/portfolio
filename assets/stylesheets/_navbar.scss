@@ -52,16 +52,39 @@
   }
 }
 
-@media (min-width: 1200px) {
+// @media (min-width: 1200px) {
+//   .about-me {
+//     display: block;
+//   }
+// }
+
+@media (max-height: 679px) {
   .about-me {
-    display: block;
+    display: none;
   }
 }
 
-
-@media (min-width: 500px) and (max-width: 1199px) {
+@media (min-height: 680px) and (max-height: 709px) {
   .about-me {
-    display: none;
+    font-size: 10px;
+  }
+}
+
+@media (min-height: 710px) and (max-height: 799px) {
+  .about-me {
+    font-size: 12px;
+  }
+}
+
+// @media (min-width: 500px) and (max-width: 1199px) {
+//   .about-me {
+//     display: none;
+//   }
+// }
+
+@media (min-height: 800px) {
+  .about-me {
+    font-size: 14px;
   }
 }
 

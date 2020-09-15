@@ -3,8 +3,16 @@
   background-position: center;
   background-size: cover;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 15%;
+  margin-bottom: 32px;
   border-radius: 50%;
   width: 240px;
   height: 240px;
+}
+
+@media (max-height: 799px) {
+  .my-avatar {
+    margin-top: 10%;
+    margin-bottom: 24px;
+  }
 }
