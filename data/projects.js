@@ -28,7 +28,7 @@ const projects = [
     url: 'https://www.medi-safe.me',
     description: 'An app which helps solve task management and communicaton issues within hospitals by supporting nursing staff to track their progress and stay up-to-date',
     imageUrl: mediSafe,
-    videoUrl: []
+    videoUrl: 'https://youtu.be/kAASka6GxIc'
   },
   {
     id: 3,
