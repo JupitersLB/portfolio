@@ -114,7 +114,9 @@
     bottom: 0px;
     &:hover {
       color: rgb(184,156,201);
-      transform: scale(2);
+      svg {
+        transform: scale(2);
+      }
     }
     svg {
       cursor: pointer;
