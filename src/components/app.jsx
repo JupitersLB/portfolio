@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import Projects from './projects';
@@ -45,7 +44,6 @@ export default class App extends Component {
               <div className="icons">
                 <a href="https://www.linkedin.com/in/jupiters-liam-baker/" target="blank"><FontAwesomeIcon icon={faLinkedin} /></a>
                 <a href="https://github.com/JupitersLB" target="blank"><FontAwesomeIcon icon={faGithub} /></a>
-                <a href="#"><FontAwesomeIcon icon={faEnvelope} /></a>
               </div>
             </div>
           </div>
