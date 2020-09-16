@@ -91,4 +91,44 @@
   }
 }
 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .my-navbar {
+      width: 100%;
+      min-width: 0px;
+      height: auto;
+      padding: 16px;
+      .about-me {
+        display: none;
+      }
+      .my-name {
+        position: absolute;
+        width: 100%;
+        top: 0;
+      }
+      .my-title {
+        position: absolute;
+        width: 100%;
+        top: 28%;
+      }
+      .profile-links {
+        position: absolute;
+        top: 50%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        a {
+          padding: 0 24px;
+        }
+      }
+      .my-footer {
+        position: fixed;
+        bottom: 0;
+        background-color: rgb(220,206,229);
+      }
+    }
+}
+
 
