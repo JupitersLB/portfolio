@@ -19,5 +19,7 @@
   and (max-device-width: 812px) {
     .project-cards {
       grid-template-columns: repeat(1, 1fr);
+      padding-top: 0px;
+      padding-bottom: 8px;
     }
 }

@@ -119,3 +119,27 @@
     0% {opacity: 0; transform: scale(.7,.7)}
     100% {opacity: 1;}
 }
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px) {
+    .about-me-title {
+      height: 84vh;
+    }
+    .travel-text {
+      height: 84vh;
+    }
+    .mapbox {
+      height: 84vh;
+    }
+    .programming-text {
+      height: 84vh;
+    }
+    .hobbies-title {
+      height: 84vh;
+    }
+    .images {
+      height: 84vh;
+    }
+}
+
