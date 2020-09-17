@@ -48,10 +48,7 @@ export default class ProjectCard extends Component {
           <Mapbox />
         </div>
         <div className="col-8 offset-2 programming-text hidden" id="programmer">
-          <p>Technology has always played a huge role in my life. Interacting with, and understanding computers was a major drive
-          for me to start programming. From my previous experience as a teacher, I always enjoyed the puzzle solving elements when
-          dealing with struggling students, or simplifying advance concepts down for students attempting to learn things well
-          beyond their maturity.</p>
+          <p>Technology has always played a huge role in my life. Interacting with, and understanding computers was a major drive for me to start programming.  Puzzle-solving is an essential component as a teacher, either managing a struggling student or reducing complex concepts into more consumable blocks. I hope to transfer these skills into my programming.</p>
         </div>
         <div className="hobbies-title hidden" id="hobbies">
           <h1>Hobbies</h1>

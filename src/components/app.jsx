@@ -25,14 +25,13 @@ export default class App extends Component {
             <h1>Liam Baker</h1>
           </div>
           <div className="my-title">
-            <h3>Full Stack Developer</h3>
+            <h3>Full-stack Developer</h3>
           </div>
           <div className="about-me">
             <p>
-              I'm a full stack developer who builds off inspiration from previous
+              I'm a full-stack developer who builds off inspiration from previous
               experiencs.  After attending <a href="https://www.switchup.org/rankings/best-coding-bootcamps" target="blank"> the best coding bootcamp in the world</a>,
-              I have focused on using the skills I gained during the bootcamp and making sure I go
-              further to learn React, Redux, and Python.
+              I have consolidated my skills in Ruby on Rails and developed knowledge in JavaScript frameworks such as React, Redux, and Stimulus JS
             </p>
           </div>
           <div className="profile-links text-center">
