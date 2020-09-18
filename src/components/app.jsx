@@ -15,6 +15,10 @@ import About from './about';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class App extends Component {
+  handleClick = () => {
+    const projectShow = document.querySelector('.project-show');
+    projectShow.classList.remove('active');
+  }
   render() {
     return (
       <Router>
@@ -35,7 +39,7 @@ export default class App extends Component {
             </p>
           </div>
           <div className="profile-links text-center">
-            <Link to="/"><h5>Projects</h5></Link>
+            <Link to="/" onClick={this.handleClick}><h5>Projects</h5></Link>
             <Link to="/about"><h5>About</h5></Link>
           </div>
           <div className="row">
