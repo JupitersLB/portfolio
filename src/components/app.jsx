@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// Switches the components
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,9 +14,9 @@ import Projects from './projects';
 import GitHubBar from './gitHubBar';
 import About from './about';
 
-// eslint-disable-next-line react/prefer-stateless-function
 export default class App extends Component {
   handleClick = () => {
+    // hide project card if the the project tab is pressed again.
     const projectShow = document.querySelector('.project-show');
     projectShow.classList.remove('active');
   }

@@ -9,6 +9,7 @@ export default class ProjectCard extends Component {
   componentDidMount() {
     const elements = document.querySelectorAll('.hidden');
     const parent = document.querySelector('.content-container');
+    // fades elements in and out when they scroll on page
     parent.addEventListener('scroll', () => {
       elements.forEach((element, idx) => {
         if (parent.scrollTop > (element.clientHeight * (idx + 1)) - 400) {
@@ -23,6 +24,7 @@ export default class ProjectCard extends Component {
   }
 
   handleClick = (div) => {
+    // navigates the different areas of the page.
     const target = document.getElementById(div);
     if (target) {
       target.scrollIntoView({
