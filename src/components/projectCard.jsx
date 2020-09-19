@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 export default class ProjectCard extends Component {
+  // Changes project card and scrolls back up
   handleClick = () => {
     const { project, changeSelectedProject } = this.props;
     changeSelectedProject(project);

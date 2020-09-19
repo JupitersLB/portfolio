@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSortDown } from '@fortawesome/free-solid-svg-icons';
-
+// YouTube player for react
 import ReactPlayer from 'react-player/youtube';
 
-// eslint-disable-next-line react/prefer-stateless-function
 export default class Project extends Component {
-
+  // scrolls to projects if the chevron is pressed
   handleClick = () => {
     const projectCards = document.querySelector('.project-cards');
-    projectCards.classList.remove('deactivate');
     projectCards.scrollIntoView({
       behavior: 'smooth'
     });
@@ -39,7 +37,7 @@ export default class Project extends Component {
             </div>
             <div className="project-icons">
               <h2>Skills</h2>
-              { icons.map(icon => <FontAwesomeIcon icon={icon} key={icon.icon} />) }
+              { icons.map((icon) => <FontAwesomeIcon icon={icon} key={icon.icon} />) }
             </div>
           </div>
         </div>

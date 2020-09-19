@@ -5,14 +5,13 @@ import { geojson } from '../../data/geoJSON';
 
 mapboxgl.accessToken = ReactMapboxToken.token;
 
-
 const Mapbox = () => {
   const mapContainerRef = useRef(null);
 
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      // See style options here: https://docs.mapbox.com/api/maps/#styles
+      // custome style from mapbox
       style: 'mapbox://styles/jupiters/ckewm8z3c0q4u19qkqkr5wm51',
       center: [126.9780, 37.5665],
       zoom: 3.1,
@@ -35,10 +34,9 @@ const Mapbox = () => {
 
     // clean up on unmount
     return () => map.remove();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   return <div className="map-container" ref={mapContainerRef} />;
-
 };
 
 export default Mapbox;
