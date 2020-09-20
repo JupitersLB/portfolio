@@ -64,7 +64,7 @@ const projects = [
     url: 'https://www.growing-trees.com/LTonline/',
     description: 'This website acts as an online content delivery service, as well as a paywall between live stream events and classes. It has allowed the school to continue functioning throughout COVID-19',
     imageUrl: ltOnline,
-    videoUrl: []
+    videoUrl: 'https://youtu.be/wy8XoC8o76U'
   }
 ];
 
