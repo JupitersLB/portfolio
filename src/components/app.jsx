@@ -18,7 +18,9 @@ export default class App extends Component {
   handleClick = () => {
     // hide project card if the the project tab is pressed again.
     const projectShow = document.querySelector('.project-show');
-    projectShow.classList.remove('active');
+    if (projectShow) {
+      projectShow.classList.remove('active');
+    }
   }
   render() {
     return (
