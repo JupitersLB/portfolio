@@ -16,7 +16,7 @@ const projects = [
     url: 'https://journal-yours.herokuapp.com',
     description: 'An onboarding social media app educating students in schools for 21st Century education. It allows schools and educational institutions to bring their students into an increasingly digital world',
     imageUrl: yours,
-    videoUrl: 'https://www.youtube.com/watch?v=jp-CVYGEsjg&list=RDjp-CVYGEsjg&start_radio=1&ab_channel=DisneyMusicVEVO'
+    videoUrl: 'https://youtu.be/0Rwf_n-VeHM'
   },
   {
     id: 2,
