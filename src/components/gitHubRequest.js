@@ -7,10 +7,10 @@ const portfolioUrl = `${baseUrl}repos/JupitersLB/portfolio/stats/participation`;
 const yoursUrl = `${baseUrl}repos/JupitersLB/rails-journal/stats/participation`;
 const cocktailUrl = `${baseUrl}repos/JupitersLB/rails-mister-cocktail/stats/participation`;
 
-const headers = { 'Authorization' : `Token ${config.token}` };
+const headers = { Authorization: `Token ${config.token}` };
 
 const api = (url) => {
-  const promise = fetch(url, { 'headers': headers }).then((r) => r.json());
+  const promise = fetch(url, { headers: headers }).then((r) => r.json());
   return { promise };
 };
 
