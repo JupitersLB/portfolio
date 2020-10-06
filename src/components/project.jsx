@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSortDown } from '@fortawesome/free-solid-svg-icons';
 // YouTube player for react
 import ReactPlayer from 'react-player/youtube';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 export default class Project extends Component {
   // scrolls to projects if the chevron is pressed
@@ -21,13 +22,15 @@ export default class Project extends Component {
           <h1 className="project-title">{project.name}</h1>
         </div>
         <div className="project-body">
-          <div className="youtube-player">
-            <ReactPlayer
-              url={project.videoUrl}
-              height="400px"
-              width="100%"
-            />
-          </div>
+          <LazyLoadComponent>
+            <div className="youtube-player">
+              <ReactPlayer
+                url={project.videoUrl}
+                height="400px"
+                width="100%"
+              />
+            </div>
+          </LazyLoadComponent>
           <div className="project-description">
             <h2>Background</h2>
             <h4>{project.description}</h4>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltDown, faCircle } from '@fortawesome/free-solid-svg-icons';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage, LazyLoadComponent } from 'react-lazy-load-image-component';
 
 import Mapbox from './mapbox';
 import { hobbyImages } from '../../data/hobbies';
@@ -48,7 +48,9 @@ export default class ProjectCard extends Component {
            languages and frameworks gives a great sense of achievement and accomplishment.</p>
         </div>
         <div className="mapbox hidden" id="map">
-          <Mapbox />
+          <LazyLoadComponent>
+            <Mapbox />
+          </LazyLoadComponent>
         </div>
         <div className="col-8 offset-2 programming-text hidden" id="programmer">
           <p>Technology has always played a huge role in my life. Interacting with, and understanding computers was a major drive for me to start programming.  Puzzle-solving is an essential component as a teacher, either managing a struggling student or reducing complex concepts into more consumable blocks. I hope to transfer these skills into my programming.</p>
@@ -59,7 +61,9 @@ export default class ProjectCard extends Component {
         </div>
         <div className="images hidden" id="images">
           <div className="images-grid">
-            {hobbyImages.map((image, idx) => <LazyLoadImage src={image} alt="" key={idx} />)}
+            <LazyLoadComponent>
+              {hobbyImages.map((image, idx) => <LazyLoadImage src={image} alt="" key={idx} />)}
+            </LazyLoadComponent>
           </div>
         </div>
         <div className="page-navigation">
