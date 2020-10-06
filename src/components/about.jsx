@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltDown, faCircle } from '@fortawesome/free-solid-svg-icons';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Mapbox from './mapbox';
 import { hobbyImages } from '../../data/hobbies';
@@ -58,7 +59,7 @@ export default class ProjectCard extends Component {
         </div>
         <div className="images hidden" id="images">
           <div className="images-grid">
-            {hobbyImages.map((image, idx) => <img src={image} alt="" key={idx}></img> )}
+            {hobbyImages.map((image, idx) => <LazyLoadImage src={image} alt="" key={idx} />)}
           </div>
         </div>
         <div className="page-navigation">
