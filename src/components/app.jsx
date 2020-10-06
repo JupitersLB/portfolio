@@ -42,8 +42,8 @@ export default class App extends Component {
             </p>
           </div>
           <div className="profile-links text-center">
-            <Link to="/" onClick={this.handleClick}><h5>Projects</h5></Link>
-            <Link to="/about"><h5>About</h5></Link>
+            <Link to="/"><h5>About</h5></Link>
+            <Link to="/projects" onClick={this.handleClick}><h5>Projects</h5></Link>
           </div>
           <div className="row">
             <div className="my-footer">
@@ -56,8 +56,8 @@ export default class App extends Component {
         </div>
 
         <Switch>
-          <Route exact path="/" component={Projects} />
-          <Route path="/about" component={About} />
+          <Route exact path="/" component={About} />
+          <Route path="/projects" component={Projects} />
         </Switch>
       </Router>
     );
